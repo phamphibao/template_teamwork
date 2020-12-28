@@ -468,7 +468,6 @@ svg.icon.icon--wide.icon-visa{
     @media (min-width: 768px) and (max-width: 991.98px) {
         height: 76vh;
         padding: 1.5%;
-
     }
 
     @media (min-width:320px)and (max-width:767px) {
@@ -804,12 +803,18 @@ svg.icon.icon--wide.icon-visa{
     .title-shopify();
     margin-top: 4%;
     margin-bottom: 2%;
+    
 }
 .latest-slide-items{
     .slide-items();
     padding: 8px;
     border: none;
-    
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        padding: 0.7px;
+    }
+    @media (min-device-width:320px)and (max-device-width:480px) {
+        padding: 0.7px; 
+    }
 }
 .latest-slide-items img{
     width: 100%;
@@ -817,6 +822,14 @@ svg.icon.icon--wide.icon-visa{
     object-fit: cover; 
     margin: auto;
     opacity: 0.3;
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        height: 20rem;
+        object-fit: cover; 
+    }
+    @media (min-device-width:320px)and (max-device-width:480px) {
+        height: 23rem;
+        object-fit: cover;  
+    }
 }
 .latest-info-products{
     .info-products();
@@ -827,6 +840,10 @@ svg.icon.icon--wide.icon-visa{
     font-size: 100%;
     font-weight: bold;
     font-family: @font-main;
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        padding: 1.5rem 1.5rem 1.5rem 1rem;
+        line-height: 0.5;
+    }
 }
 .latest-slide-items a{
     text-decoration: none;
@@ -843,6 +860,12 @@ svg.icon.icon--wide.icon-visa{
     border: none;
     font-size: 90%;
     margin: 2% 0;
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        width: 30%;
+        font-size: 90%;
+        margin: 1% 0;
+        padding: 4.5%;
+    }
 }
 .latest-btn-slide:hover{
     background-color: #4cd8cf;
@@ -857,6 +880,26 @@ svg.icon.icon--wide.icon-visa{
     top: 35%;
     left: 40%;
     
+}
+.pre-latest{
+    width: 50px;
+    height: 50px;
+    background-color: @color-text-main;
+}
+.pre-latest svg{
+    margin-top: 25%;
+    margin-left: 25%;
+}
+.next-latest{
+    .pre-latest();
+    bottom: 400px !important;
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        bottom: 330px !important;
+    }
+}
+.next-latest svg{
+    margin-top: 25%;
+    margin-left: 30%;
 }
 /* --------------------------------- responsive --------------------------------- */
 
