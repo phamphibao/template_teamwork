@@ -1033,9 +1033,11 @@ svg.icon.icon--wide.icon-visa{
 // banner text
 .banner-text{
     background-color: @background-color-main;
-    padding: 3%;
-    line-height: 1.5;
-   
+    padding: 5%;
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        padding: 4% !important;
+    }
 }
 .main-banner{
     width: 100%;
@@ -1075,14 +1077,20 @@ svg.icon.icon--wide.icon-visa{
     .btn_search_mb();
     background-color: @color-text-main;
     color: @background-color-main;
-    width: 20%;
     border: none;
-    padding: 1%;
+    padding: 1% 6%;
     letter-spacing: 1.3px;
     font-weight: 600;
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        padding: 2% 5%;
+        margin-bottom: 2%;
+        margin-top: 3%;
+    }
     @media (min-device-width:320px)and (max-device-width:480px) {
-        padding: 2.5%;
-        width: 40%;
+        padding: 2.5% 5%;
+        margin-bottom: 2%;
+        margin-top: 3%;
     }
     @media (max-device-width:320px) {
         padding: 3%;
@@ -1194,9 +1202,18 @@ svg.icon.icon--wide.icon-visa{
 }
 
 // banner email form subsribe
+.form-banner{
+    padding: 0;
+}
 .form_subsribe{
     width: 90% !important;
     outline: none;
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        margin-top: 5%;
+    }
+    @media (min-device-width:320px)and (max-device-width:480px) {
+        width: 100% !important; 
+    }
 }
 .form_subsribe input{
     background-color: @background-color-main;
@@ -1215,8 +1232,17 @@ svg.icon.icon--wide.icon-visa{
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1.5px;
+    @media (min-device-width:320px)and (max-device-width:480px) {
+        font-size: 90%;
+    }
 }
-
+.content-bn-form{
+    .content-bn-text();
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        font-size: 110%;
+    }
+    
+}
 /* --------------------------------- responsive --------------------------------- */
 
 /* footer ----------- */
