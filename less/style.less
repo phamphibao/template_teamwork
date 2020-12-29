@@ -16,13 +16,14 @@
 
 // start css header
 // ___________________test git_____________
-.test-git-push{
+.test-git-push {
     background-color: @background-color-main;
     font-size: 12px;
     font-weight: 200;
     height: 15px;
     width: 20px;
 }
+
 // ___________________test git_______________
 .top-header {
     background: @background-color-main;
@@ -168,9 +169,11 @@
     outline: none;
     display: inline-block;
 }
-#bc-sf-search-box-0:focus{
+
+#bc-sf-search-box-0:focus {
     box-shadow: 0px -1px 4px -1px #000;
 }
+
 .list-menu-pa {
     width: 100%;
     overflow-x: auto;
@@ -419,7 +422,8 @@
     .logo-matchbox {
         height: 2.5rem;
     }
-    .bc-sf-search-box-1{
+
+    .bc-sf-search-box-1 {
         outline: none;
     }
 }
@@ -1335,14 +1339,14 @@ svg.icon.icon--wide.icon-visa {
     object-fit: cover;
     margin: auto;
     opacity: 0.3;
-    height: 10rem;
+    height: 30rem;
 
     @media (min-width: 768px) and (max-width: 991.98px) {
         height: 20rem;
         object-fit: cover;
     }
 
-    @media (min-device-width:320px)and (max-device-width:480px) {
+    @media (min-device-width:320px)and (max-device-width:768px) {
         height: 23rem;
         object-fit: cover;
     }
@@ -1499,6 +1503,14 @@ svg.icon.icon--wide.icon-visa {
     .image-slide-items();
     opacity: 1;
     // height: 15px;
+    @media (min-device-width:320px)and (max-device-width:480px) {
+        height: 21rem;
+        object-fit: cover;
+    }
+    @media (min-device-width : 768px) and (max-device-width : 1024px) {
+        height: 19rem;
+        object-fit: cover;
+    }
 }
 
 
@@ -1523,6 +1535,13 @@ svg.icon.icon--wide.icon-visa {
     font-family: @font-main;
     font-size: 20px;
     color: @background-color-main;
+    @media (min-device-width:320px)and (max-device-width:480px) {
+        font-size: 13px;
+    }
+    @media (min-device-width : 768px) and (max-device-width : 1024px) {
+        font-size: 20px;
+        line-height: 1.1;
+    }
 }
 
 .food-detail {
@@ -1530,6 +1549,12 @@ svg.icon.icon--wide.icon-visa {
     font-size: 15px;
     font-weight: 400;
     font-family: @font-main;
+    @media (min-device-width:320px)and (max-device-width:480px) {
+        font-size: 13px;
+    }
+    @media (min-device-width : 768px) and (max-device-width : 1024px) {
+        line-height: 1.3;
+    }
 }
 
 .food-info-products a {
@@ -1538,13 +1563,40 @@ svg.icon.icon--wide.icon-visa {
     color: @background-color-main;
     font-weight: 400;
     font-size: 15px;
+    @media (min-device-width:320px)and (max-device-width:480px) {
+        font-size: 13px;
+        letter-spacing: 1.3px;
+    }
+    @media (min-device-width : 768px) and (max-device-width : 1024px) {
+        letter-spacing: 1.3px;
+    }
 }
 
 .food-info-products span {
     color: @background-color-main;
     font-weight: 600;
 }
+#pre-food{
+    .pre-latest();
+}
+#next-food{
+    .next-latest();
+}
+#pre-food svg {
+    margin-top: 25%;
+    margin-left: 25%;
+}
 
+#next-food svg {
+    margin-top: 25%;
+    margin-left: 30%;
+}
+
+/* our brands ----------- */
+.our_brands{
+    width: 100%
+    .food-title();
+}
 /* --------------------------------- responsive --------------------------------- */
 
 /* footer ----------- */
