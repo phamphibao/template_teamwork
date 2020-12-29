@@ -6,7 +6,7 @@ $(document).ready(function () {
         slidesToShow: 3,
         slidesToScroll: 1,
         centerMode: true,
-        centerPadding: '9%',
+        centerPadding: '10%',
         prevArrow: ".previous",
         nextArrow: ".next",
         responsive: [{
