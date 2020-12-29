@@ -38,6 +38,9 @@
     padding-left: 56.205px;
     min-width: @col-80
 }
+.logo-baner{
+    padding: 0;
+}
 .site-header-upper{
     align-items: center;
     padding-top:35px;
@@ -135,6 +138,7 @@
     display: inline-block;
 }
 .list-menu-pa{
+    width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
 }
@@ -143,7 +147,7 @@
 }
 .list-menu{
     width: 100%;
-    min-width: 1024px;
+    // min-width: 1024px;
     margin: 0;
     display: flex;
     justify-content: space-between;
@@ -151,7 +155,7 @@
 }
 .list-menu > li{
     min-width:auto;
-    padding: 1rem 0.5rem;
+    padding: 1rem 1.5rem;
     list-style: none;  
 }
 .list-menu > li>a{
@@ -166,8 +170,9 @@
 .icon-arrow-down{
     width: 8px;
 }
-.drop-menu{
-    display: inline-block;
+.drop-menu>a{
+    display: flex;
+    flex-wrap: nowrap;
 }
 .nav-desktop-drop{
     margin-top: 1rem;
@@ -1081,7 +1086,7 @@ svg.icon.icon--wide.icon-visa{
 // banner text
 .banner-text{
     background-color: @background-color-main;
-    padding: 4%;
+    padding: 5%;
 
     @media (min-width: 768px) and (max-width: 991.98px) {
         padding: 4% !important;

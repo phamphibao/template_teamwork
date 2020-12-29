@@ -14,9 +14,8 @@
 <body>
 <header>
     <div id="shopify-section-header" class="shopify-section" >
-        <div class="top-header">
-            <div class="container-custom"> 
-                <div class="row middle-xs">
+            <div class="container-custom top-header"> 
+                <div class="row top-row-header middle-xs">
                     <div class="col-sm-3 middle-xs top-header_left">
                         <div class="icon-header-left middle-xs">
                             <ul class="social-links list--inline">
@@ -49,7 +48,6 @@
                     </div>
                 </div>
             </div>
-        </div>
         <div class="container-custom">
             <div class="row site-header-upper">
                 <div class="col-sm-4 logo-baner">
@@ -66,13 +64,13 @@
                     </div>
                     <div class="site-header__links site-header__account"><a href="/account/register" id="customer_register_link" data-no-instant=""><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-user" viewBox="0 0 23 24"><path fill="#363434" fill-rule="evenodd" d="M1.403 23.075a10.22 10.22 0 0 1 7.849-9.527 6.937 6.937 0 0 0 4.854 0 10.221 10.221 0 0 1 7.848 9.527H1.403zM5.61 6.993A6.075 6.075 0 0 1 11.678.925a6.076 6.076 0 0 1 6.07 6.068c0 2.506-1.51 4.72-3.845 5.642a6.02 6.02 0 0 1-4.448 0A6.035 6.035 0 0 1 5.61 6.993zm9.729 5.953a6.943 6.943 0 0 0 3.333-5.953A7.001 7.001 0 0 0 11.678 0a7 7 0 0 0-6.993 6.993 6.942 6.942 0 0 0 3.334 5.953A11.138 11.138 0 0 0 .467 23.538V24H22.89v-.462a11.14 11.14 0 0 0-7.551-10.592z"></path></svg></a></div>
                     <div class="site-header__links site-header__wishlist"> <a href="#swym-wishlist" class="site-header__wishlist_link" title="Wishlist"> <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-heart" viewBox="0 0 24 22"><path fill="#363434" fill-rule="evenodd" d="M11.811 20.074c.07-.097.11-.176.17-.236 1.259-1.263 2.52-2.524 3.782-3.786 1.785-1.785 3.59-3.55 5.346-5.362 1.297-1.337 1.8-2.968 1.366-4.793-.486-2.039-1.785-3.408-3.794-3.999-1.94-.57-3.656-.046-5.118 1.328-.46.432-.895.89-1.343 1.335-.316.315-.568.315-.88.003-.463-.462-.915-.937-1.393-1.383-1.279-1.194-2.788-1.731-4.523-1.41-2.08.384-3.506 1.627-4.191 3.609-.69 1.994-.23 3.819 1.23 5.32 2.304 2.368 4.662 4.681 6.997 7.017l2.351 2.357M11.777 3.6c.303-.308.584-.587.858-.872.946-.984 2.086-1.612 3.43-1.862 3.434-.639 6.865 1.503 7.398 5.205.31 2.16-.321 4.025-1.874 5.574-3.11 3.104-6.215 6.213-9.322 9.32-.38.38-.596.38-.979-.002-3.146-3.145-6.294-6.287-9.435-9.437C-1.205 8.46-.334 3.221 3.533 1.37 5.958.208 8.913.713 10.81 2.615c.318.318.63.641.968.985"></path></svg></a></div>
-                    <div class="site-header__links site-header__cart"> <a href="/cart" id="header-cart" class="site-header__cart cart__toggle js-drawer-open-right" data-cart-view="data-cart-view" rv-data-count="shop.cartCount" data-no-instant="" data-count="0"> <span rv-show="shop.cartCount | gt 0" style="display: none;"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-bag" viewBox="0 0 21 26"><style>.st0</style><g id="Group-6"><g id="Group"><path id="Fill-1" class="st0" d="M5.5 5.8C5.5 3.1 7.7 1 10.4 1s4.9 2.2 4.9 4.9v2.3H5.5V5.8zm10.7 2.3V5.8c0-3.2-2.6-5.8-5.8-5.8-3.2 0-5.8 2.6-5.8 5.8v2.3H.2v12.6c0 2.9 2.4 5.2 5.2 5.2h10.1c2.9 0 5.2-2.4 5.2-5.2V8.1h-4.5z"></path></g></g></svg></span> <span rv-hide="shop.cartCount | gt 0"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-bag-o" viewBox="0 0 21 26"><path fill="#363434" fill-rule="evenodd" d="M19.647 20.752a4.298 4.298 0 0 1-4.293 4.293H5.248a4.299 4.299 0 0 1-4.293-4.293V9.104h18.692v11.648zM5.31 5.817A4.868 4.868 0 0 1 10.172.955a4.868 4.868 0 0 1 4.862 4.862v2.332H5.31V5.817zm10.68 2.332V5.817A5.823 5.823 0 0 0 10.172 0a5.823 5.823 0 0 0-5.816 5.817v2.332H0v12.603A5.254 5.254 0 0 0 5.248 26h10.106a5.254 5.254 0 0 0 5.248-5.248V8.15h-4.613z"></path></svg></span> <span class="count" rv-html="shop.cartCount">0</span> <span style = "color: #333;font-size: 14px;font-weight: 400;" class="total_price hidden-xs" rv-html="cart.total_price | money shop.currency">$0.00</span></a></div></div>
+                    <div class="site-header__links site-header__cart"> <a href="/cart" id="header-cart" class="site-header__cart cart__toggle js-drawer-open-right" data-cart-view="data-cart-view" rv-data-count="shop.cartCount" data-no-instant="" data-count="0"> <span rv-show="shop.cartCount | gt 0" style="display: none;"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-bag" viewBox="0 0 21 26"><style>.st0</style><g id="Group-6"><g id="Group"><path id="Fill-1" class="st0" d="M5.5 5.8C5.5 3.1 7.7 1 10.4 1s4.9 2.2 4.9 4.9v2.3H5.5V5.8zm10.7 2.3V5.8c0-3.2-2.6-5.8-5.8-5.8-3.2 0-5.8 2.6-5.8 5.8v2.3H.2v12.6c0 2.9 2.4 5.2 5.2 5.2h10.1c2.9 0 5.2-2.4 5.2-5.2V8.1h-4.5z"></path></g></g></svg></span> <span rv-hide="shop.cartCount | gt 0"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-bag-o" viewBox="0 0 21 26"><path fill="#363434" fill-rule="evenodd" d="M19.647 20.752a4.298 4.298 0 0 1-4.293 4.293H5.248a4.299 4.299 0 0 1-4.293-4.293V9.104h18.692v11.648zM5.31 5.817A4.868 4.868 0 0 1 10.172.955a4.868 4.868 0 0 1 4.862 4.862v2.332H5.31V5.817zm10.68 2.332V5.817A5.823 5.823 0 0 0 10.172 0a5.823 5.823 0 0 0-5.816 5.817v2.332H0v12.603A5.254 5.254 0 0 0 5.248 26h10.106a5.254 5.254 0 0 0 5.248-5.248V8.15h-4.613z"></path></svg></span> <span class="count" rv-html="shop.cartCount">0</span> <span style = "color: #333;font-size: 14px;font-weight: 400;" class="total_price hidden-xs" rv-html="cart.total_price | money shop.currency">$0.00</span></a></div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 list-menu-pa">
+                <div class="list-menu-pa">
                     <ul class="list-menu">
-                        <li><a href="#">
+                        <li class="drop-menu"><a href="#">
                             <span>NEW</span>
                             
                         </a></li>
@@ -339,8 +337,8 @@
                         </li>
                         <li class="drop-menu">
                             <a href="#">
-                            <span>GIFTS & HOME</span>
-                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-down" viewBox="0 0 14 9"><path d="M6.6 8.4L13.4 0H.2l6.4 8.4z" fill="#444" fill-rule="evenodd"></path></svg>
+                                <span style="min-width: 6rem ;">GIFTS & HOME</span>
+                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-down" viewBox="0 0 14 9"><path d="M6.6 8.4L13.4 0H.2l6.4 8.4z" fill="#444" fill-rule="evenodd"></path></svg>
                             </a>
                             <div class="nav-desktop-drop nav-desktop-drop-right">
                                 <div class="row">
