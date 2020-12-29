@@ -1,6 +1,7 @@
 $(document).ready(function () {
     slide_home('.main-slide-products','#pre-products','#next-products');
     slide_home('.main-slide-latest','.pre-latest','.next-latest');
+    slide_home('.main-slide-food','#pre-food','#next-food');
    
 
 
