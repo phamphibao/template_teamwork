@@ -455,6 +455,129 @@
 }
 
 // end css header
+
+.bc-sf-filter-block-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon{ 
+    height:10px; width:10px; 
+    position: relative; 
+}
+.vertica{
+    transform-origin:50% 50%;
+    transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s;
+}
+.toggle-open .vertical {
+    transform: rotate(90deg);
+    transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s;
+}
+.bc-sf-filter-block-content{
+    margin: 0;
+    max-height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: all 500ms cubic-bezier(0.57, 0.06, 0.05, 0.95);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.active-slider{
+    margin-top: 10px;
+    visibility: visible;
+    max-height: 200px;
+    overflow-y: scroll;
+    transition: all 800ms cubic-bezier(0.57, 0.06, 0.05, 0.95);
+}
+
+.active-slider::-webkit-scrollbar {
+display: none;
+}
+.bc-sf-filter-block-title > span{
+    font-size: 13px;
+    font-weight: 900;
+}
+.bc-sf-filter-option-single-list{
+    margin: 0;
+}
+.bc-sf-filter-option-single-list a{
+    text-decoration: none;
+    color: @dark-background-color-main;
+    font-size: 15px;
+    font-weight: 100;
+}
+.bc-sf-filter-option-single-list a::before{
+    content: '';
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    border: 1px solid currentColor;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+.bc-sf-filter-option-single-list>li:hover a{
+    color: @background-color-main;
+}
+.bc-sf-filter-option-single-list input{
+    display: none;
+}
+.bc-sf-filter-option-amount{
+    margin-left: 4px;
+}
+.blue{
+    font-weight: 900 !important;
+    &::before{
+        background-color: @background-color-main;
+    }
+}
+#wrapper {
+	margin: 20px;
+}
+.form-group {
+	margin-top: 20px
+}
+.form-control {
+	width: 49%;
+	display: inline-block;
+}
+
+.noUi-target {
+	background: #999;
+	border-radius: 10px;
+	border: none;
+	box-shadow: none;
+}
+.noUi-horizontal {
+	height: 4px;
+	.noUi-handle {
+        width: 5px;
+        height: 20px;
+        top: -8px;
+        right: -2px;
+	}
+}
+.noUi-connect {
+	background: darken(#3FB8AF, 5%);
+	box-shadow: none;
+}
+.noUi-handle {
+	border: none;
+	background: #3FB8AF;
+	cursor: default;
+	box-shadow: none;
+	&:before, &:after {
+		display: none;
+	}
+	&:focus {
+		outline: none;
+		background: darken(#3FB8AF, 10%);
+	}
+}
+.form-group input{
+    border-radius: 0;
+    height: 20px;
+    width: 90px;
+}
 // -----------------------------------------------------------------------------------
 // start css footer 
 

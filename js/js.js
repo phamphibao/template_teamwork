@@ -1,3 +1,4 @@
+$(document).ready(function () {
 $('.nav-list_item').on('click',function(){
     var tag = $(this).attr('value'); //lấy giá trị của li
     var tag1 = $(this).text(); //lấy tên của li
@@ -31,3 +32,61 @@ $('.nav-link').on('click',function(){
 //     //window.alert(back_link);
     
 // });
+
+
+$(".bc-sf-filter-block-title").on('click',function(){
+
+    if ($(this).next().hasClass('active-slider')) {
+        $(this).next().removeClass('active-slider')
+        $(this).children().next().removeClass('toggle-open');
+    }
+    else{
+        $(this).next().toggleClass('active-slider');
+        $(this).children().next().toggleClass('toggle-open');
+    }
+    
+    
+    // console.log($(this).next());
+  });
+  $(".bc-sf-filter-option-single-list>li").on('click',function(){
+    console.log($(this).children());
+    $(this).children().toggleClass('blue');
+  });
+
+  var $slider = $('#slider');
+  var $input1 = $('#input1');
+  var $input2 = $('#input2');
+  var $inputs = $('input');
+  
+  noUiSlider.create(slider, {
+      start: [1, 200],
+      step: 1,
+      connect: true,
+      range: {
+          'min': [     1 ],
+          '10%': [   20 ],
+          '60%': [  120 ],
+          '80%': [ 160],
+          'max': [ 200 ]
+      } 
+  });
+  
+  slider.noUiSlider.on('update', function ( values, handle ) {
+      
+      if (values != 1 || values != 200) {
+              handle == 0 ? $input1.val(values[handle]) : $input2.val(values[handle]);
+      } else {
+          handle == 0 ? $input1.val("No Min") : $input2.val("No Max");
+      }
+  
+  });
+  
+  $inputs.on('change', function() { 
+      if (this == $input1[0]) {
+          slider.noUiSlider.set([this.value,null]);
+      } else {
+          slider.noUiSlider.set([null,this.value]);
+      }
+  });
+
+});
