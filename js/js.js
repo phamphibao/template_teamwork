@@ -27,7 +27,6 @@ $(".bc-sf-filter-block-title").on('click',function(){
     // console.log($(this).next());
   });
   $(".bc-sf-filter-option-single-list>li").on('click',function(){
-    console.log($(this).children());
     $(this).children().toggleClass('blue');
   });
 
