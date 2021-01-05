@@ -91,7 +91,7 @@
 .text-right div>a,
 .top-header_left div>a {
     color: @color-text-main;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 12px;
     text-decoration: none;
 }
@@ -108,6 +108,7 @@
 .top-header-right svg {
     height: 20px;
     width: 22px;
+    margin-right: 5px;
 }
 
 .top-header-contact {
@@ -207,7 +208,9 @@
     display: flex;
     flex-wrap: nowrap;
 }
-
+.drop-menu span {
+    margin-right: 5px;
+}
 .nav-desktop-drop {
     margin-top: 1rem;
     display: none;
@@ -276,7 +279,7 @@
     color: @color-text-main;
     text-transform: uppercase;
     font-size: 12px;
-    font-weight: 900;
+    font-weight: 500;
 }
 
 .top-header-mobile-item:last-child {
@@ -513,7 +516,6 @@
 .collection__header-text{
     font-size: 0.9em;
     line-height: 1.5em;
-    padding-bottom: 1rem;
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 auto;
     -moz-box-flex: 1;
@@ -659,7 +661,7 @@ display: none;
 }
 .bc-sf-filter-block-title > span{
     font-size: 13px;
-    font-weight: 900;
+    font-weight: 500;
 }
 .bc-sf-filter-option-single-list{
     margin: 0;
@@ -668,7 +670,7 @@ display: none;
     text-decoration: none;
     color: @dark-background-color-main;
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 400;
 }
 .bc-sf-filter-option-single-list a::before{
     content: '';
@@ -689,7 +691,7 @@ display: none;
     margin-left: 4px;
 }
 .blue{
-    font-weight: 900 !important;
+    font-weight: 500 !important;
     &::before{
         background-color: @background-color-main;
     }
@@ -761,6 +763,120 @@ display: none;
     transition: all 800ms cubic-bezier(0.57, 0.06, 0.05, 0.95);
 }
 // ------------------------------------end slider-----------------------------------------------
+.slider-product {
+    font-family: @font-main;
+    margin-top: 5%;
+    &__wrap{
+        position: relative;
+    }
+    &__title {
+        .text--title--section();
+    }
+
+    &__items {
+        height: 100%;
+        outline: 0px;
+    }
+
+    &__image {
+        width: 100%;
+        margin: auto;
+    }
+
+    &__links {
+        text-decoration: none !important;
+        color: @dark-background-color-main;
+        padding: 0 8px;
+        margin-bottom: 8px;
+        display: block;
+    }
+    &__links:hover{
+        color: @dark-background-color-main;
+        box-shadow: 0px 1px 6px 1px;
+    }
+    &__links:hover svg {
+        color: @dark-background-color-main;
+    }
+
+    &__links:hover &__btn-view {
+        opacity: 1;
+    }
+
+    &__title-product {
+        font-size: 90%;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    &__content-top{
+        display: flex;
+    }
+    &__content-top span{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    &__text {
+        font-size: 15px;
+        font-weight: 400;
+        color: #6d7579;
+    }
+    &__text:hover{
+        color: @dark-background-color-main;
+    }
+
+    &__price {
+        font-size: 19.5px;
+        font-weight: 500;
+        color: red;
+    }
+
+    &__price span {
+        color: @background-color-main;
+        font-weight: normal;
+        font-size: 12px;
+        margin-left: 1%;
+        margin-bottom: 0.5rem;
+    }
+    &__add-product {
+        width: 23px;
+        position: absolute;
+        margin: 4% 4%;
+        border: none;
+        background-color: #fff;
+        color: #787979;
+    }
+
+    &__add-product:focus {
+        outline: none;
+        opacity: 1 !important;
+    }
+
+    &__heart-solid path {
+        color: @background-color-main  !important;
+        z-index: 1;
+    }
+
+    &__btn-view {
+        width: 100%;
+        background-color: @background-color-main;
+        color: @color-text-main;
+        border: none;
+        padding: 2.5%;
+        text-transform: uppercase;
+        font-family: @font-main;
+        font-size: 80%;
+        font-weight: bold;
+        letter-spacing: 1.2px;
+        margin-top: 1%;
+        margin-bottom: 8px;
+        opacity: 0;
+    }
+
+    &__btn-view svg {
+        width: 6%;
+    }
+}
+
+// --------------------------------------slider product----------------------------------------
 // start css footer 
 
 .footer_pc {
