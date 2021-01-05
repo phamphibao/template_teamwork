@@ -1,38 +1,16 @@
 $(document).ready(function () {
 $('.nav-list_item').on('click',function(){
-    var tag = $(this).attr('value'); //lấy giá trị của li
-    var tag1 = $(this).text(); //lấy tên của li
+    var tag = $(this).attr('value');
+    var tag1 = $(this).text();
     var tag1 = tag1.split(' ').join('');
     var tag1 = tag1.split('&').join('');
-    // window.alert("#layer"+tag1); // chữ #layer với tên
-    // var back_link="#layer"+tag; // Chữ #layer với valua
-    // window.alert(back_link);
-    // $('.nav-link').attr('href',back_link);
-    //$('.nav-link').text(tag1);
-    // $('.nav-link').attr('value',tag);
     $("#layer"+tag1).removeClass('hide-menu'); 
     $("#layer"+tag1).toggleClass('show-menu');
 });
 $('.nav-link').on('click',function(){
     $(this).parent().parent().parent().removeClass('show-menu');
     $(this).parent().parent().parent().toggleClass('hide-menu');
-    // console.log();
 });
-
-
-
-// $('.nav-link').on('click',function(){
-//      var tag = $(this).attr('href');
-//     var val= $(this).attr('value');
-//     // window.alert(val);
-//      $(tag).removeClass('show-menu'); 
-//      var back_link="#layer"+(val-1);
-//      $('.nav-link').attr('href',back_link);
-//     $('.nav-link').attr('value',val-1);
-//     //window.alert(back_link);
-    
-// });
-
 
 $(".bc-sf-filter-block-title").on('click',function(){
 
@@ -59,11 +37,8 @@ $(".bc-sf-filter-block-title").on('click',function(){
     }  
     else{
         $("#slider-bar").toggleClass('active-slider');
-
     }
   });
-
-
 
   var $slider = $('#slider');
   var $input1 = $('#input1');
@@ -99,6 +74,21 @@ $(".bc-sf-filter-block-title").on('click',function(){
       } else {
           slider.noUiSlider.set([null,this.value]);
       }
+  });
+
+  $(".toggle-button").on('click',function(){
+    $(".rte").removeClass('toggle-this-container');
+    $(".rte").toggleClass('toggle-this-active');
+    $(this).parent().next().slideToggle(500);
+    $(this).toggle();
+    $(".toggle-button--off").toggle();
+  });
+  $(".toggle-button--off").on('click',function(){
+    $(".rte").removeClass('toggle-this-active');
+    $(".rte").toggleClass('toggle-this-container');
+    $(".toggle-this").slideToggle(500);
+    $(this).toggle();
+    $(".toggle-button").toggle();
   });
 
 });
